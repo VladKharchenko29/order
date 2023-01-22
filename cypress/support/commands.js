@@ -30,6 +30,7 @@ Cypress.Commands.add('doLogin', (mail, pass) => {
     cy.get('input[placeholder="Email"]').type(mail)
     cy.get('input[placeholder="Password"]').type(pass).tab().tab().tab().click()
     cy.wait(500)
+    cy.get('[data-testid="lang_picker"]').eq(0).select('EN')
 })
 
 Cypress.Commands.add('logout', () => {

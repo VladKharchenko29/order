@@ -25,7 +25,7 @@ class Subscription {
     verifyTranslations(title, desc) {
         cy.contains('Edit').eq(0).click()
         cy.clickByContain('Add translation')
-        cy.clickByContain('language').select('en')
+        cy.clickByContain('data-testid="lang_picker"').select('en')
         cy.selectFirstPosition().type(title)    
         cy.selectFirstPosition().type(desc)    
     }
