@@ -11,7 +11,7 @@ describe('Verify subscriptions', () => {
     })
 
     beforeEach(() => {
-        cy.doLogin(data.trueEmail1, data.truePassword)
+        cy.doLogin(data.userTwoEmail, data.mainPassword)
         Cypress.on('uncaught:exception', (err, runnable) => {
             return false;
         })
@@ -27,7 +27,7 @@ describe('Verify subscriptions', () => {
         subscription.selectCreator()
         subscription.clickBuyWithBank(1, data.mail)
         cy.logout()
-        cy.doLogin(data.trueEmail, data.truePassword)
+        cy.doLogin(data.userOneEmail, data.mainPassword)
         cy.visit(Cypress.env('creator_private'))
         subscription.verifySubscribers()
         subscription.verifyRevenue()

@@ -11,7 +11,7 @@ describe('Verify unsubscribing', () => {
     })
 
     beforeEach(() => {
-        cy.doLogin(data.subEmail, data.truePassword)
+        cy.doLogin(data.subscriberEmail, data.mainPassword)
         Cypress.on('uncaught:exception', (err, runnable) => {
             return false;
         })

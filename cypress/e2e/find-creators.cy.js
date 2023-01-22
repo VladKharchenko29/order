@@ -11,7 +11,7 @@ describe('Creators search', () => {
     })
 
     beforeEach(() => {
-        cy.doLogin(data.trueEmail, data.truePassword)
+        cy.doLogin(data.userOneEmail, data.mainPassword)
         Cypress.on('uncaught:exception', (err, runnable) => {
             return false;
         })

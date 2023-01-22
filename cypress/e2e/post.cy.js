@@ -11,7 +11,7 @@ describe('Post', () => {
     })
 
     beforeEach(() => {
-        cy.doLogin(data.trueEmail1, data.truePassword)
+        cy.doLogin(data.userTwoEmail, data.mainPassword)
         Cypress.on('uncaught:exception', (err, runnable) => {
             return false;
         })

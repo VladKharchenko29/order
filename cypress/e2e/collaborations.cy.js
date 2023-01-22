@@ -17,13 +17,13 @@ describe('Collaborations', () => {
     })
 
     it('Create collaboration tier by user A', () => {
-        cy.doLogin(data.trueEmail1, data.truePassword)
+        cy.doLogin(data.userTwoEmail, data.mainPassword)
         cy.visit(Cypress.env('tier_creation'))
         collab.createCollaboration(data.title, data.description, data.number, data.collab)
     })
 
     it('Accept collaboration tier by user b', () => {
-        cy.doLogin(data.trueEmail, data.truePassword)
+        cy.doLogin(data.userOneEmail, data.mainPassword)
         collab.createCollaboration(data.title, data.description, data.number, data.collab)
     })
 
