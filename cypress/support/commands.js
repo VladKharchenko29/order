@@ -27,10 +27,11 @@
 
 Cypress.Commands.add('doLogin', (mail, pass) => {
     cy.visit('https://sponsor.financial/login')
-    cy.get('input[placeholder="Email"]').type(mail)
-    cy.get('input[placeholder="Password"]').type(pass).tab().tab().tab().click()
     cy.wait(500)
     cy.get('[data-testid="lang_picker"]').eq(0).select('EN')
+    cy.get('input[placeholder="Email"]').type(mail)
+    cy.get('input[placeholder="Password"]').type(pass).tab().tab().tab().click()
+
 })
 
 Cypress.Commands.add('logout', () => {
