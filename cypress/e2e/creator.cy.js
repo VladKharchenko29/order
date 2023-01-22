@@ -7,7 +7,7 @@ const creator = new Creator()
 describe('Creators page', () => {
 
     before(() => {
-        var data = cy.userCredentials('credentials')
+        const data = cy.userCredentials('credentials')
     })
 
     beforeEach(() => {

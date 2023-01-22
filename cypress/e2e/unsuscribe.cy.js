@@ -7,7 +7,7 @@ const subscription = new Subscription()
 describe('Verify unsubscribing', () => {
 
     before(() => {
-        var data = cy.userCredentials('credentials')
+        const data = cy.userCredentials('credentials')
     })
 
     beforeEach(() => {

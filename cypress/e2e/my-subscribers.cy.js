@@ -7,7 +7,7 @@ const subs = new Subscription()
 describe('Verify my subscribers', () => {
 
     before(() => {
-        var data = cy.userCredentials('credentials')
+        const data = cy.userCredentials('credentials')
     })
 
     beforeEach(() => {

@@ -7,7 +7,7 @@ const profile = new UserProfile()
 describe('Profile', () => {
 
     before(() => {
-        var data = cy.userCredentials('credentials')
+        const data = cy.userCredentials('credentials')
     })
 
     beforeEach(() => {

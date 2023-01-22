@@ -7,7 +7,7 @@ const homepage = new Homepage()
 describe('Creators search', () => {
 
     before(() => {
-        var data = cy.userCredentials('credentials')
+        const data = cy.userCredentials('credentials')
     })
 
     beforeEach(() => {

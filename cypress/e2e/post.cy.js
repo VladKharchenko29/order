@@ -7,7 +7,7 @@ const page = new CreatePage()
 describe('Post', () => {
 
     before(() => {
-        var data = cy.userCredentials('credentials')
+        const data = cy.userCredentials('credentials')
     })
 
     beforeEach(() => {

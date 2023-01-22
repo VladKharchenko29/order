@@ -7,7 +7,7 @@ const revenue = new Revenue()
 describe('Verify my revenue', () => {
 
     before(() => {
-        var data = cy.userCredentials('credentials')
+        const data = cy.userCredentials('credentials')
     })
 
     beforeEach(() => {

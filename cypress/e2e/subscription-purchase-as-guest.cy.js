@@ -7,7 +7,7 @@ const subscription = new Subscription()
 describe('Make a purchase as unathorised user', () => {
 
     beforeEach(() => {
-        var data = cy.userCredentials('credentials')
+        const data = cy.userCredentials('credentials')
         cy.visit(Cypress.env('purchase_link'))
     })
 

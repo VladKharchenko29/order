@@ -11,7 +11,7 @@ const logIn = new LogIn()
 describe('Register and login', () => {
 
   before(() => {
-    var data = cy.userCredentials('credentials')
+    const data = cy.userCredentials('credentials')
 })
 
   beforeEach(() => {

@@ -7,7 +7,7 @@ const subscription = new Subscription()
 describe('Make a purchase as authorised user', () => {
 
     before(() => {
-        var data = cy.userCredentials('credentials')
+        const data = cy.userCredentials('credentials')
     })
 
     beforeEach(() => {
