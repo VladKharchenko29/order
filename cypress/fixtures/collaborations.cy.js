@@ -7,7 +7,7 @@ const collab = new Collaborations()
 describe('Collaborations', () => {
 
     before(() => {
-        var data = cy.userCredentials('credentials')
+        const data = cy.userCredentials('credentials')
     })
 
     beforeEach(() => {
