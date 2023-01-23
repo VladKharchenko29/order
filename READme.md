@@ -7,6 +7,7 @@ Install tools:
 Scripts:
 * npx cypress open - Opens a GUI runner
 * npx cypress run - Runs tests in non-gui mode (in console)
+* npx cypress run <script> - Runs a specific script
 
 
 Custom scripts:
