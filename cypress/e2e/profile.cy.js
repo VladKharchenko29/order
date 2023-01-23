@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import UserProfile from "../support/Page Object/UserProfile"
+import UserProfile from "../support/PageObject/UserProfile"
 
 const profile = new UserProfile()
 

@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import Revenue from "../support/Page Object/Revenue"
+import Revenue from "../support/PageObject/Revenue"
 
 const revenue = new Revenue()
 
@@ -18,7 +18,7 @@ describe('Verify my revenue', () => {
         cy.visit(Cypress.env('revenue'))
     })
 
-    it('Search for a creator', () => {
+    it('Verify revenue', () => {
         revenue.verifyRevenue()
     })
 

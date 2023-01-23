@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import Creator from "../support/Page Object/Creator"
+import Creator from "../support/PageObject/Creator"
 
 const creator = new Creator()
 

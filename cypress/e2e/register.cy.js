@@ -1,8 +1,8 @@
 /// <reference types="cypress" />
 
-import Homepage from "../support/Page Object/Homepage"
-import SignUp from "../support/Page Object/SignUp"
-import LogIn from "../support/Page Object/LogIn"
+import Homepage from "../support/PageObject/Homepage"
+import SignUp from "../support/PageObject/SignUp"
+import LogIn from "../support/PageObject/LogIn"
 
 const homePage = new Homepage()
 const signUp = new SignUp()

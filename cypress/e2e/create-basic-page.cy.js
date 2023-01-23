@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import CreatePage from "../support/Page Object/CreatePage";
+import CreatePage from "../support/PageObject/CreatePage";
 
 const create = new CreatePage()
 

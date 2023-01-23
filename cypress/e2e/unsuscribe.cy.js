@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import Subscription from "../support/Page Object/Subscription";
+import Subscription from "../support/PageObject/Subscription";
 
 const subscription = new Subscription()
 

@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import Subscription from "../support/Page Object/Subscription"
+import Subscription from "../support/PageObject/Subscription"
 
 const subs = new Subscription()
 
@@ -18,7 +18,7 @@ describe('Verify my subscribers', () => {
         cy.visit(Cypress.env('subscribers'))
     })
 
-    it('Search for a creator', () => {
+    it('Verify my subscribers', () => {
         subs.verifySubscribers()
     })
 

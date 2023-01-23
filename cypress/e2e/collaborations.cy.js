@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import Collaborations from "../support/Page Object/Collaborations"
+import Collaborations from "../support/PageObject/Collaborations"
 
 const collab = new Collaborations()
 
