@@ -48,7 +48,7 @@ class CreatePage {
 
     verifyGreetings(desc) {
         cy.clickByContain('Greetings')
-        cy.get('.ql-container').type(desc)
+        cy.get('.ql-container').clear().type(desc)
         cy.clickByContain('Save settings')
     }
 

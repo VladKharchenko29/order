@@ -27,3 +27,22 @@ Before the tests launch, please make sure that each of the following requirement
 * crypto_disabled - first, the correct creator with disabled crypto should be used. Then, find a mentioned creator's susbcription for purchase.
 
 All posts, subscribers, pages, etc, which were created during tests have a "test" word in each of input fields.
+
+User 1: 
+* email - john.doe@mail.com
+* password - Qwert1234
+* tiers - 3 different tiers
+* profile name - John Doe
+
+User 2: 
+* email - test@test.pl
+* password - Qwert1234
+* you should following the User 1
+* tiers - only 1 tier called 'Tier Test'
+* profile name - title
+
+User subscriber: 
+* email - sub@test.pl
+* password - Qwert1234
+* you should following the User 1
+* active subscription from User 1
