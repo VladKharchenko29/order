@@ -31,18 +31,18 @@ All posts, subscribers, pages, etc, which were created during tests have a "test
 User 1: 
 * email - john.doe@mail.com
 * password - Qwert1234
-* tiers - 3 different tiers
-* profile name - John Doe
+* tiers - 3 different tiers for verifying
+* creator title - 'John Doe'
 
 User 2: 
 * email - test@test.pl
 * password - Qwert1234
 * you should following the User 1
-* tiers - only 1 tier called 'Tier Test'
-* profile name - title
+* tiers - have 1 tier for verifying
+* creator title - 'Test Title'
 
-User subscriber: 
+User subscriber - only for subscription testing purposes: 
 * email - sub@test.pl
 * password - Qwert1234
 * you should following the User 1
-* active subscription from User 1
+* you should have active subscription from User 1

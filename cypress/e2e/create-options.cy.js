@@ -23,7 +23,7 @@ describe('Create other options', () => {
     })
 
     it('Create a tier', () => {
-        create.createTier(data.title, data.description, data.number, data.searchKeyword)
+        create.createTier(data.title, data.description, data.price, data.searchKeyword)
     })
 
     it('Create posts', () => {
