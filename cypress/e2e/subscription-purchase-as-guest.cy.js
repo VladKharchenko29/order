@@ -12,7 +12,7 @@ describe('Make a purchase as unathorised user', () => {
     })
 
     it('Make a subscription purchase with bank', () => {
-        subscription.clickBuyWithBank(0)
+        subscription.clickBuyWithBank(0, data.subscriberEmail)
     })
 
     // it('Make a subscription purchase with crypto', () => {

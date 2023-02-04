@@ -60,7 +60,7 @@ Cypress.Commands.add('getByPlaceholder', (i) => {
 Cypress.Commands.add('selectPositionFromMenu', (i, name) => {
     cy.contains(name).click()
     switch (i) {
-        case 1: cy.contains('Create page').click()
+        case 1: cy.contains('Edit page').click()
             break;
     }
 
@@ -81,21 +81,26 @@ Cypress.Commands.add('fillForm', () => {
 })
 
 Cypress.Commands.add('clickByContain', (i) => {
+    cy.wait(500)
     cy.contains(i).should('be.visible').click({ force: true })
 })
 
 Cypress.Commands.add('visibleByContain', (i) => {
+    cy.wait(500)
     cy.contains(i).should('be.visible')
 })
 
 Cypress.Commands.add('getByTestId', (i) => {
+    cy.wait(500)
     cy.get('[data-testid=' + i + '')
 })
 
 Cypress.Commands.add('getByType', (i) => {
+    cy.wait(500)
     cy.get('[type=' + i + '')
 })
 
 Cypress.Commands.add('getByDataPlaceholder', (i) => {
+    cy.wait(500)
     cy.get('data-placeholder="' + i + '"]')
 })

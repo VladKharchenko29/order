@@ -12,11 +12,12 @@ class Homepage {
         cy.clickByContain('Create a paid subscription')
     }
 
-    findCreators(i) {
+    findCreators(i, c) {
         cy.clickByContain('Find creators')
-            .getByPlaceholder("Type name, creator title or url").type(i)
+        cy.wait(500)
+        cy.getByPlaceholder("Type name, creator title or url").type(i)
         cy.clickByContain('Search')
-        cy.clickByContain('office_transformation')
+        cy.clickByContain(c)
     }
 
 }

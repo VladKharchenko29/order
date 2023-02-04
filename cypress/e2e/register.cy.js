@@ -23,6 +23,7 @@ describe('Register and login', () => {
 
   it('Enter as a guest and make a purchase', () => {
     homePage.clickCreateAPaidSubscription()
+    cy.wait(2000)
     signUp.fillTheForm(data.name, data.lastname, data.mail, data.testPassword)
     logIn.doLogin(data.testPassword)
   })

@@ -18,7 +18,7 @@ describe('Creators search', () => {
     })
 
     it('Search for a creator', () => {
-        homepage.findCreators(data.searchKeyword)
+        homepage.findCreators(data.searchKeyword, data.findCreatorName)
     })
 
 })

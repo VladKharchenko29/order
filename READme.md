@@ -46,3 +46,8 @@ User subscriber - only for subscription testing purposes:
 * password - Qwert1234
 * you should following the User 1
 * you should have active subscription from User 1
+
+To find a creator, use findCreatorName variable in credentials.
+
+Why to NOT to use imports, but cy.fixtures?
+https://docs.cypress.io/api/commands/fixture

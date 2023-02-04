@@ -4,7 +4,7 @@ import CreatePage from "../support/PageObject/CreatePage";
 
 const create = new CreatePage()
 
-describe('Create a page', () => {
+describe('Edit a page', () => {
 
     before(() => {
         const data = cy.userCredentials('credentials')
@@ -15,11 +15,12 @@ describe('Create a page', () => {
         Cypress.on('uncaught:exception', (err, runnable) => {
             return false;
         })
+        cy.wait(500)
         cy.visit(Cypress.env('create_page'))
     })
 
-    it('Create a basic page', () => {
-        // cy.selectPositionFromMenu(1, data.username1)
+    it('Edit a basic page', () => {
+        cy.selectPositionFromMenu(1, data.username1)
         create.fillTheForm(data.title, data.subtitle, data.description, data.link)
     })
 
